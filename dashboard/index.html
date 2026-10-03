@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai Bus Routes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div><p class="eyebrow">MUMBAI BUS DIRECTORY</p><h1>Find every bus route,<br />in one place.</h1><p class="subhead">Search routes from BEST, KDMT, TMT and VVMT. See destinations and every stop in a selected scheduled pattern.</p></div>
+      <div class="sync"><span class="pulse"></span><span id="updated">Loading feed…</span></div>
+    </header>
+    <main>
+      <section class="metrics" aria-label="Dataset summary">
+        <article><strong id="routeTotal">—</strong><span>Routes</span></article>
+        <article><strong id="stopTotal">—</strong><span>Bus stops</span></article>
+        <article><strong id="agencyTotal">—</strong><span>Operators</span></article>
+        <article><strong id="patternTotal">—</strong><span>Route patterns</span></article>
+      </section>
+      <section class="workspace">
+        <aside class="directory">
+          <div class="filter-head"><div><h2>All buses</h2><p id="resultCount">Loading…</p></div></div>
+          <label class="search"><span>⌕</span><input id="query" type="search" placeholder="Bus no., destination or stop" autocomplete="off" /></label>
+          <div class="agency-tabs" id="agencyTabs"></div>
+          <div class="route-list" id="routeList" aria-live="polite"></div>
+        </aside>
+        <section class="detail" id="detail" aria-live="polite"><div class="empty"><div class="bus-icon">▰</div><h2>Select a bus route</h2><p>Choose any route from the list to view its complete stop sequence.</p></div></section>
+      </section>
+    </main>
+    <template id="routeCard"><button class="route-card"><span class="route-number"></span><span class="route-copy"><strong></strong><small></small></span><span class="arrow">›</span></button></template>
+    <script src="data/routes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
