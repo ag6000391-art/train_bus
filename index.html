@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102e43" />
+  <title>Mumbai Transit Dashboard</title>
+  <style>
+    :root{--navy:#102e43;--teal:#077d7c;--paper:#f5f8f8;--ink:#17222d;--muted:#667782}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}.hero{min-height:310px;background:radial-gradient(circle at 88% 0,#1a6971 0 10%,transparent 10.2%),linear-gradient(120deg,#102e43,#15485d);color:#fff;padding:clamp(34px,8vw,80px) max(7vw,26px)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.5px;color:#73d4ca;margin:0 0 13px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.04;letter-spacing:-2px;margin:0}.hero p:last-child{font-size:15px;color:#c6d8dc;line-height:1.7;max-width:530px;margin:18px 0 0}main{max-width:1040px;margin:-45px auto 0;padding:0 22px 60px;position:relative}.chooser{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid #e2e9e9;border-radius:15px;padding:28px;box-shadow:0 11px 30px rgba(16,46,67,.12);transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(16,46,67,.18)}.icon{width:51px;height:51px;border-radius:11px;display:grid;place-items:center;font-size:26px;margin-bottom:18px}.bus .icon{background:#e6f6f1;color:#087b78}.train .icon{background:#e8f0fb;color:#2867ad}.tag{font-size:10px;font-weight:800;letter-spacing:1px;color:var(--muted)}h2{font-size:23px;letter-spacing:-.8px;margin:7px 0} .card p{color:var(--muted);font-size:13px;line-height:1.6;margin:0 0 22px}.open{font-size:13px;font-weight:750}.bus .open{color:#087b78}.train .open{color:#2867ad}.note{text-align:center;color:#74848e;font-size:12px;margin:34px 0 0}@media(max-width:620px){.hero{min-height:275px}.chooser{grid-template-columns:1fr}.card{padding:23px}main{margin-top:-30px}}
+  </style>
+</head>
+<body>
+  <header class="hero"><p class="eyebrow">MUMBAI TRANSIT</p><h1>Bus aur train,<br />ek hi jagah.</h1><p>Mumbai routes, scheduled stops aur train timestamps ke liye apna dashboard choose karein.</p></header>
+  <main><section class="chooser" aria-label="Choose a dashboard"><a class="card bus" href="dashboard/"><div class="icon">▰</div><span class="tag">MUMBAI BUS</span><h2>Bus Dashboard</h2><p>Route, operator, direction aur complete stop sequence search karein.</p><span class="open">Open Bus Dashboard →</span></a><a class="card train" href="train-dashboard/"><div class="icon">▰</div><span class="tag">MUMBAI LOCAL</span><h2>Train Dashboard</h2><p>Train number, route aur har scheduled station timestamp dekhein.</p><span class="open">Open Train Dashboard →</span></a></section><p class="note">Scheduled timetable and route information · Live vehicle tracking is not included</p></main>
+</body>
+</html>
